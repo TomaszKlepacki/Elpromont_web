@@ -1,8 +1,8 @@
 ﻿
 body {
-    font: 14px/22px "Raleway", Arial, Helvetica, sans-serif;
+    font: 14px/22px "Raleway", "Arial", "Helvetica", sans-serif;
     color: #6e6e6e;
-    background-color: #222;
+    background-color: rgb(255, 255, 255);
     padding: 0 !important;
     position: relative;
     -webkit-font-smoothing: antialiased;
@@ -172,7 +172,7 @@ body.dark .blog,
 body.dark .contact,
 body.dark .preloader,
 body.dark .logos {
-  background-color: #242424;
+  background-color: #ffffff;
 }
 
 body.dark .services-box-item-cover,
@@ -251,7 +251,7 @@ body.dark.big-triangle .contactform:after,
 body.dark.big-triangle .contactform:before,
 body.dark.big-triangle .banner:after,
 body.dark.big-triangle .banner:before {
-  border-bottom: 100px solid #242424;
+  border-bottom: 100px solid #ffffff;
 }
 
 body.dark.big-triangle .projectmanager:after,
@@ -1079,7 +1079,7 @@ body.big-triangle .banner:before {
   width: 50%;
   z-index: 100;
   border-top: 100px solid white;
-  border-bottom: 100px solid white;
+  border-bottom: 100px solid #f8c400;
   -webkit-transform: rotate(0.000001deg);
   transform: rotate(0.000001deg);
 }
@@ -1239,7 +1239,7 @@ h5,
 h6 {
     color: #555;
     text-transform: uppercase;
-    font-family: "Raleway", sans-serif;
+    font-family: "Helvetica", sans-serif;
 }
 h1 {
     font-size: 48px;
@@ -1818,6 +1818,7 @@ body.dark .header.header-fixed .logo a img.logo-dark {
 }
 .about .about-content .title-about {
     font-size: 28px;
+    font-family: Helvetica;
     margin-bottom: 10px;
 	    margin-top: 0;
 }
@@ -3072,6 +3073,7 @@ body.blog-page article .comments-form .custom-button:before {
 .info-map-boxes-item {
   padding: 18px 20px 15px;
   width: 100%;
+  height: 150px;
   border-radius: 7px;
   font-size: 14px;
   color: inherit;
