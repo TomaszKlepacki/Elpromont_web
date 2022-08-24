@@ -1,8 +1,8 @@
 ﻿
 body {
-    font: 14px/22px "Raleway", Arial, Helvetica, sans-serif;
+    font: 14px/22px "Raleway", "Arial", "Helvetica", sans-serif;
     color: #6e6e6e;
-    background-color: #222;
+    background-color: rgb(255, 255, 255);
     padding: 0 !important;
     position: relative;
     -webkit-font-smoothing: antialiased;
@@ -172,7 +172,7 @@ body.dark .blog,
 body.dark .contact,
 body.dark .preloader,
 body.dark .logos {
-  background-color: #242424;
+  background-color: #ffffff;
 }
 
 body.dark .services-box-item-cover,
@@ -251,7 +251,7 @@ body.dark.big-triangle .contactform:after,
 body.dark.big-triangle .contactform:before,
 body.dark.big-triangle .banner:after,
 body.dark.big-triangle .banner:before {
-  border-bottom: 100px solid #242424;
+  border-bottom: 100px solid #ffffff;
 }
 
 body.dark.big-triangle .projectmanager:after,
@@ -1079,7 +1079,7 @@ body.big-triangle .banner:before {
   width: 50%;
   z-index: 100;
   border-top: 100px solid white;
-  border-bottom: 100px solid white;
+  border-bottom: 150px solid #f8c400;
   -webkit-transform: rotate(0.000001deg);
   transform: rotate(0.000001deg);
 }
@@ -1239,7 +1239,7 @@ h5,
 h6 {
     color: #555;
     text-transform: uppercase;
-    font-family: "Raleway", sans-serif;
+    font-family: "Helvetica", sans-serif;
 }
 h1 {
     font-size: 48px;
@@ -1586,6 +1586,9 @@ body.dark .header.header-fixed .logo a img.logo-dark {
   border-radius: 40px;
   font-size: 14px;
   font-weight: 600;
+  
+  
+  
 }
 .custom-button,
 .custom-button:hover,
@@ -1818,6 +1821,7 @@ body.dark .header.header-fixed .logo a img.logo-dark {
 }
 .about .about-content .title-about {
     font-size: 28px;
+    font-family: Helvetica;
     margin-bottom: 10px;
 	    margin-top: 0;
 }
@@ -3072,6 +3076,7 @@ body.blog-page article .comments-form .custom-button:before {
 .info-map-boxes-item {
   padding: 18px 20px 15px;
   width: 100%;
+  height: 170px;
   border-radius: 7px;
   font-size: 14px;
   color: inherit;
@@ -3112,7 +3117,7 @@ body.blog-page article .comments-form .custom-button:before {
 .contactform {
     color: #fff;
     /* background-image: url("http://via.placeholder.com/1600x650"); */
-    background: url(../img/elpromont/contact.jpeg);
+    background: url(../img/elpromont/contact.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -3701,6 +3706,11 @@ body.dark.blog-page .banner-blog-post .meta {
 	body.dark .nav-menu ul.nav-menu-inner li a, body.dark .header-fixed .nav-menu ul.nav-menu-inner li a {
 		color: #fff;
 	}
+
+  .info-map-boxes-item{
+    margin-bottom: 20px;
+  }
+
 }
 /* Extra Small Devices */
 
@@ -3715,6 +3725,10 @@ body.dark.blog-page .banner-blog-post .meta {
         padding-left: 15px !important;
         padding-right: 15px !important;
         overflow-x: hidden;
+    }
+
+    .about .about-content .title-about{
+      font-size:24px;
     }
     .header-inner,
     .videopromotion p,
@@ -3862,7 +3876,9 @@ body.dark.blog-page .banner-blog-post .meta {
         padding-right: 0;
     }
 
-
+    .about .about-content .title-about{
+      font-size:18px;
+    }
 
 	.about ul.nav.nav-tabs {
     border: 1px solid #ddd;
@@ -3924,5 +3940,9 @@ body.skew .portfolio .container  {
   .services .services-box-item {
     margin-top: 15px;
     padding: 0 15px;
+}
+
+.info-map-boxes-item{
+height: 200px;
 }
 }
