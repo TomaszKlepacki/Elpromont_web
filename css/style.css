@@ -1,4 +1,5 @@
-﻿
+﻿<<<<<<< HEAD
+
 body {
     font: 14px/22px "Raleway", "Arial", "Helvetica", sans-serif;
     color: #6e6e6e;
@@ -172,7 +173,7 @@ body.dark .blog,
 body.dark .contact,
 body.dark .preloader,
 body.dark .logos {
-  background-color: #ffffff;
+  background-color: #242424;
 }
 
 body.dark .services-box-item-cover,
@@ -1586,9 +1587,6 @@ body.dark .header.header-fixed .logo a img.logo-dark {
   border-radius: 40px;
   font-size: 14px;
   font-weight: 600;
-  
-  
-  
 }
 .custom-button,
 .custom-button:hover,
@@ -3940,9 +3938,5 @@ body.skew .portfolio .container  {
   .services .services-box-item {
     margin-top: 15px;
     padding: 0 15px;
-}
-
-.info-map-boxes-item{
-height: 200px;
 }
 }
