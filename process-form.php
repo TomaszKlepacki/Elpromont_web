@@ -1,7 +1,7 @@
 <?php
 $mailToSend = 'tomaszklepacki@op.pl';
 if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
-	$firstname  = $_POST['firstname'];
+	$name       = $_POST['firstname'];
     $lastname   = $_POST['lastname'];
 	$message    = $_POST['message'];
     $email      = $_POST['email'];
