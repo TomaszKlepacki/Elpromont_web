@@ -1,4 +1,18 @@
 <?php
+
+// $db = mysql_connect ("127.0.0.1", "elpromonteu", "123dewde#$45refr#3");
+// mysql_select_db ("elpromonteu");
+
+
+$host="127.0.0.1"; // Host name 
+$username="elpromonteu"; // Mysql username 
+$password="123dewde#$45refr#3"; // Mysql password 
+$db_name=" elpromonteu"; // Database name 
+$tbl_name="members"; // Table name 
+// Connect to server and select databse. 
+mysql_connect("$host", "$username", "$password")or die("cannot connect"); mysql_select_db("$db_name")or die("cannot select DB");
+
+
 $mailToSend = 'tomaszklepacki@op.pl';
 if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 	$name       = $_POST['firstname'];
@@ -7,7 +21,7 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
     $email      = $_POST['email'];
 	$errors     = Array();
 	$return     = Array();
-	if ( empty( $name ) ) {
+	if ( empty( $firstname ) ) {
 		array_push( $errors, 'firstname' );
 	}
     if ( empty( $lastname ) ) {
@@ -41,7 +55,7 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 				.msg-title {margin-top:30px;}
 			</style>
 			<body>
-			<div>Imię: <strong>$name</strong></div>
+			<div>Imię: <strong>$firstname</strong></div>
             <div>Nazwisko: <strong>$lastname</strong></div>
 			<div>Email: <a href=\"mailto:$email\">$email</a></div>
 			<div class=\"msg-title\"> <strong>Wiadomość:</strong></div>
