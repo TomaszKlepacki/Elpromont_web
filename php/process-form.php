@@ -1,12 +1,13 @@
 <?php
 
-$host="127.0.0.1"; // Host name 
-$username="elpromonteu"; // Mysql username 
-$password="123dewde#$45refr#3"; // Mysql password 
-$db_name=" elpromonteu"; // Database name 
-// Connect to server and select databse. 
+$host="127.0.0.1"; 
+$username="elpromonteu";  
+$password="123dewde#$45refr#3";  
+$db_name=" elpromonteu"; 
 
-mysql_connect("$host", "$username", "$password")or die("cannot connect"); mysql_select_db("$db_name")or die("cannot select DB");
+
+mysql_connect("$host", "$username", "$password")or die("cannot connect");
+mysql_select_db("$db_name")or die("cannot select DB");
 
 
 $mailToSend = 'tomaszklepacki@op.pl';
@@ -51,7 +52,7 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 				.msg-title {margin-top:30px;}
 			</style>
 			<body>
-			<div>Imię: <strong>$name</strong></div>
+			<div>Imię: <strong>$firstname</strong></div>
             <div>Nazwisko: <strong>$lastname</strong></div>
 			<div>Email: <a href=\"mailto:$email\">$email</a></div>
 			<div class=\"msg-title\"> <strong>Wiadomość:</strong></div>
@@ -69,3 +70,5 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 	header( 'Content-Type: application/json' );
 	echo json_encode( $return );
 }
+
+?>
