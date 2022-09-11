@@ -8,8 +8,8 @@ $host="127.0.0.1"; // Host name
 $username="elpromonteu"; // Mysql username 
 $password="123dewde#$45refr#3"; // Mysql password 
 $db_name=" elpromonteu"; // Database name 
-$tbl_name="members"; // Table name 
 // Connect to server and select databse. 
+
 mysql_connect("$host", "$username", "$password")or die("cannot connect"); mysql_select_db("$db_name")or die("cannot select DB");
 
 
