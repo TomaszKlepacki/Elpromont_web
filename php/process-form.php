@@ -1,4 +1,14 @@
 <?php
+
+$host="127.0.0.1"; // Host name 
+$username="elpromonteu"; // Mysql username 
+$password="123dewde#$45refr#3"; // Mysql password 
+$db_name=" elpromonteu"; // Database name 
+// Connect to server and select databse. 
+
+mysql_connect("$host", "$username", "$password")or die("cannot connect"); mysql_select_db("$db_name")or die("cannot select DB");
+
+
 $mailToSend = 'tomaszklepacki@op.pl';
 if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 	$firstname  = $_POST['firstname'];
@@ -7,7 +17,7 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
     $email      = $_POST['email'];
 	$errors     = Array();
 	$return     = Array();
-	if ( empty( $name ) ) {
+	if ( empty( $firstname ) ) {
 		array_push( $errors, 'firstname' );
 	}
     if ( empty( $lastname ) ) {
